@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps",
+        "spec": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+          "sshUrl": "git+ssh://git@github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+          "httpsUrl": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+          "gitUrl": "git://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+          "shortcut": "github:mapsplugin/cordova-plugin-googlemaps#multiple_maps",
+          "directUrl": "https://raw.githubusercontent.com/mapsplugin/cordova-plugin-googlemaps/multiple_maps/package.json"
+        }
+      },
+      "D:\\project\\Safarii\\node_modules"
+    ]
+  ],
+  "_from": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+  "_id": "cordova-plugin-googlemaps@2.0.0-beta2",
+  "_inCache": true,
+  "_location": "/cordova-plugin-googlemaps",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps",
+    "spec": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+      "sshUrl": "git+ssh://git@github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+      "httpsUrl": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+      "gitUrl": "git://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+      "shortcut": "github:mapsplugin/cordova-plugin-googlemaps#multiple_maps",
+      "directUrl": "https://raw.githubusercontent.com/mapsplugin/cordova-plugin-googlemaps/multiple_maps/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#f2f46bddeb92f273ad8bddef8ef82991c8f80ce6",
+  "_shasum": "5d0cadce8d281d02feb07aa84f46d49c1ea0b030",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps",
+  "_where": "D:\\project\\Safarii\\node_modules",
+  "author": {
+    "name": "Masashi Katsumata, Hirbod Mirjavadi"
+  },
+  "bugs": {
+    "url": "https://github.com/mapsplugin/cordova-plugin-googlemaps/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-googlemaps",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Google Maps native SDK for Android and iOS",
+  "devDependencies": {},
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.2.0"
+    }
+  ],
+  "gitHead": "f2f46bddeb92f273ad8bddef8ef82991c8f80ce6",
+  "homepage": "https://github.com/mapsplugin/cordova-plugin-googlemaps#readme",
+  "keywords": [
+    "google",
+    "maps",
+    "geo",
+    "google maps",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-googlemaps",
+  "optionalDependencies": {},
+  "readme": "# Cordova GoogleMaps plugin for iOS and Android (version 2.0 beta)\r\n\r\n==========================\r\n\r\nThis plugin is a thin wrapper for [Google Maps Android API](https://developers.google.com/maps/documentation/android/) and [Google Maps SDK for iOS](https://developers.google.com/maps/documentation/ios/).\r\nBoth [PhoneGap](http://phonegap.com/) and [Apache Cordova](http://cordova.apache.org/) are supported.\r\n\r\n-----\r\n\r\n### Quick install\r\n\r\nSince this version is still in beta, you need to install the plugin from github directory.\r\n\r\n*Github (current multiple_maps branch)*\r\n```bash\r\n$> cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps --variable API_KEY_FOR_ANDROID=\"YOUR_ANDROID_API_KEY_IS_HERE\" --variable API_KEY_FOR_IOS=\"YOUR_IOS_API_KEY_IS_HERE\"\r\n```\r\n\r\nIf you re-install the plugin, please always remove the plugin first, then remove the SDK\r\n\r\n```bash\r\n$> cordova plugin rm cordova-plugin-googlemaps\r\n$> cordova plugin rm com.googlemaps.ios\r\n$> cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps --variable API_KEY_FOR_ANDROID=\"YOUR_ANDROID_API_KEY_IS_HERE\" --variable API_KEY_FOR_IOS=\"YOUR_IOS_API_KEY_IS_HERE\"\r\n```\r\n\r\n### Configuration\r\n\r\nYou can also configure the following variables to customize the iOS location plist entries\r\n\r\n- `LOCATION_WHEN_IN_USE_DESCRIPTION` for `NSLocationWhenInUseUsageDescription` (defaults to \"Show your location on the map\")\r\n- `LOCATION_ALWAYS_USAGE_DESCRIPTION` for `NSLocationAlwaysUsageDescription` (defaults t \"Trace your location on the map\")\r\n\r\nExmaple using the cordova CLI\r\n\r\n```bash\r\n$> cordova plugin rm cordova-plugin-googlemaps\r\n$> cordova plugin rm com.googlemaps.ios\r\n$> cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps --variable API_KEY_FOR_ANDROID=\"YOUR_ANDROID_API_KEY_IS_HERE\" --variable API_KEY_FOR_IOS=\"YOUR_IOS_API_KEY_IS_HERE\" --variable LOCATION_WHEN_IN_USE_DESCRIPTION=\"My custom when in use message\" --variable LOCATION_ALWAYS_USAGE_DESCRIPTION=\"My custom always usage message\"\r\n```\r\n\r\nExample using config.xml\r\n```xml\r\n<plugin name=\"cordova-plugin-googlemaps\" spec=\"1.4.0\">\r\n    <variable name=\"API_KEY_FOR_ANDROID\" value=\"YOUR_ANDROID_API_KEY_IS_HERE\" />\r\n    <variable name=\"API_KEY_FOR_IOS\" value=\"YOUR_IOS_API_KEY_IS_HERE\" />\r\n    <variable name=\"LOCATION_WHEN_IN_USE_DESCRIPTION\" value=\"My custom when in use message\" />\r\n    <variable name=\"LOCATION_ALWAYS_USAGE_DESCRIPTION\" value=\"My custom always usage message\" />\r\n</plugin>\r\n```\r\n\r\n\r\n### Quick demo\r\n\r\n```html\r\n<script type=\"text/javascript\">\r\nvar map;\r\ndocument.addEventListener(\"deviceready\", function() {\r\n  var div = document.getElementById(\"map_canvas\");\r\n\r\n  // Initialize the map view\r\n  map = plugin.google.maps.Map.getMap(div);\r\n\r\n  // Wait until the map is ready status.\r\n  map.addEventListener(plugin.google.maps.event.MAP_READY, onMapReady);\r\n}, false);\r\n\r\nfunction onMapReady() {\r\n  var button = document.getElementById(\"button\");\r\n  button.addEventListener(\"click\", onBtnClicked);\r\n}\r\n\r\nfunction onBtnClicked() {\r\n\r\n  // Move to the position with animation\r\n  map.animateCamera({\r\n    target: {lat: 37.422359, lng: -122.084344},\r\n    zoom: 17,\r\n    tilt: 60,\r\n    bearing: 140,\r\n    duration: 5000\r\n  }, function() {\r\n\r\n    // Add a maker\r\n    map.addMarker({\r\n      position: {lat: 37.422359, lng: -122.084344},\r\n      title: \"Welecome to \\n\" +\r\n             \"Cordova GoogleMaps plugin for iOS and Android\",\r\n      snippet: \"This plugin is awesome!\",\r\n      animation: plugin.google.maps.Animation.BOUNCE\r\n    }, function(marker) {\r\n\r\n      // Show the info window\r\n      marker.showInfoWindow();\r\n\r\n      // Catch the click event\r\n      marker.on(plugin.google.maps.event.INFO_CLICK, function() {\r\n\r\n        // To do something...\r\n        alert(\"Hello world!\");\r\n\r\n      });\r\n    });\r\n  });\r\n}\r\n</script>\r\n```\r\n\r\n-----\r\n\r\n### Documentation\r\n\r\n[All documentations are here!!](https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.0.0/README.md)\r\n\r\n-----\r\n\r\n### Buy me a beer\r\n\r\nI have been spend tons of time for this plugin project, but even though the plugin is still free.\r\n\r\nI appreciate if you donate some amount to help this project from this button.\r\n\r\n[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=SQPLZJ672HJ9N&lc=US&item_name=cordova%2dgooglemaps%2dplugin&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)\r\n\r\nThe donated amount is used for buying testing machine (such as iPhone, Android) or new software.\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps"
+  },
+  "version": "2.0.0-beta2"
+}
