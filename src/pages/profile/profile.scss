@@ -1,0 +1,46 @@
+page-profile {
+
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .nama {
+    position: absolute;
+    top: 20%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-icon {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+
+  .username {
+    font-size: 1.3em;
+    position: absolute;
+    top: 37%;
+    width: 100%;
+    color: #fff;
+  }
+
+    .email {
+    font-size: 1.3em;
+    position: absolute;
+    top: 48%;
+    width: 100%;
+    color: #fff;
+  }
+
+}
+
+}
